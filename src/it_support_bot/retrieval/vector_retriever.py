@@ -1,10 +1,12 @@
 """Embedding-based retriever: numpy cosine similarity with an on-disk cache.
 
-The corpus is small (~175 section chunks), so brute-force search — one matrix
-multiplication against the pre-normalized corpus matrix — is simpler and
-faster than a vector database (FAISS, Chroma, ...) would be at this scale.
-Embeddings are cached on disk keyed by (model, content hash), so re-runs cost
-nothing and never re-embed.
+The corpus of KB articles is small (~175 section chunks), so brute-force search is one matrix
+multiplication against the pre-normalized corpus matrix. This is simpler and faster than a
+vector database would be at this scale. However, it's worth mentioning that it would make sense
+to implement a vector database in case the corpus grows.
+
+Embeddings are cached on disk, so re-runs do not generate extra cost nothing since they
+are only re-embedded if they changed.
 """
 
 from __future__ import annotations
