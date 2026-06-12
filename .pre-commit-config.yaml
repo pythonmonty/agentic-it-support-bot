@@ -1,0 +1,50 @@
+# Run on every commit: `uv run pre-commit install` once, then it's automatic.
+# Manual run: `uv run pre-commit run --all-files`
+#
+# Fixer hooks exclude it-support-dataset/ so the provided dataset stays
+# byte-identical; validation hooks still cover it.
+
+exclude: ^\.idea/
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: ^it-support-dataset/
+      - id: end-of-file-fixer
+        exclude: ^it-support-dataset/
+      - id: mixed-line-ending
+        args: [--fix=lf]
+        exclude: ^it-support-dataset/
+      - id: check-json
+      - id: pretty-format-json
+        args: [--autofix, --no-sort-keys, --indent=2]
+        exclude: ^it-support-dataset/
+      - id: check-yaml
+      - id: check-toml
+      - id: check-added-large-files
+        args: [--maxkb=1024]
+      - id: check-merge-conflict
+
+  # Python: lint (with autofix) and format
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.17
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  # Markdown: style + 100-char line limit (configured in .markdownlint.yaml)
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.48.0
+    hooks:
+      - id: markdownlint
+        args: [--fix]
+        exclude: ^it-support-dataset/
+
+  # Keep uv.lock in sync with pyproject.toml
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    rev: 0.11.21
+    hooks:
+      - id: uv-lock

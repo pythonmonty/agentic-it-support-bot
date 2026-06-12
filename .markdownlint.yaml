@@ -1,0 +1,8 @@
+# markdownlint configuration (https://github.com/DavidAnson/markdownlint)
+default: true
+
+# Line length: 100 chars; code blocks and tables are exempt.
+MD013:
+  line_length: 100
+  code_blocks: false
+  tables: false
