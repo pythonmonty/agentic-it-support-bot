@@ -1,14 +1,15 @@
 """In-memory SQLite database built from the file tickets.json.
 
-Tickets are loaded into a normalized schema (tags and work notes in child
-tables) so the agent can answer aggregate and relational questions with plain
-SQL. Queries from the agent run behind a SQLite authorizer that permits reads
-only, so a hallucinated UPDATE/DROP can never mutate data.
+Tickets are loaded into a normalized schema (tags and work notes are in separate tables)
+so the agent can answer aggregate and relational questions with plain SQL.
+Queries from the agent run behind a SQLite authorizer that permits reads only, so a hallucinated
+UPDATE/DROP can never mutate data.
 
-The Pydantic models in models.py are the single source of truth for the
-schema: the CREATE TABLE DDL, the INSERT statement, and the LLM-facing
-SCHEMA_DOC are all generated from their fields (SQL types from annotations,
-allowed values from Literal types, column comments from Field descriptions).
+The Pydantic models in models.py are the single source of truth for the schema:
+- the CREATE TABLE instructions,
+- the INSERT instruction,
+- and the SCHEMA_DOC used for the LLM
+are all generated from the Pydantic model fields.
 """
 
 from __future__ import annotations

@@ -1,0 +1,504 @@
+{
+  "description": "Ground-truth links between KB articles, recurring root causes, and tickets.",
+  "kb_to_tickets": {
+    "password-reset-procedure.md": {
+      "article_id": "KB-001",
+      "title": "Password Reset Procedure",
+      "root_causes": [
+        "Expired password"
+      ],
+      "ticket_count": 4,
+      "ticket_ids": [
+        "T-1007",
+        "T-1101",
+        "T-1119",
+        "T-1143"
+      ]
+    },
+    "mfa-enrollment.md": {
+      "article_id": "KB-002",
+      "title": "MFA Enrollment",
+      "root_causes": [
+        "Failed MFA enrollment"
+      ],
+      "ticket_count": 10,
+      "ticket_ids": [
+        "T-1075",
+        "T-1076",
+        "T-1079",
+        "T-1080",
+        "T-1081",
+        "T-1082",
+        "T-1084",
+        "T-1085",
+        "T-1087",
+        "T-1088"
+      ]
+    },
+    "mfa-recovery.md": {
+      "article_id": "KB-003",
+      "title": "MFA Recovery",
+      "root_causes": [
+        "MFA Recovery (secondary)"
+      ],
+      "ticket_count": 4,
+      "ticket_ids": [
+        "T-1084",
+        "T-1088",
+        "T-1114",
+        "T-1137"
+      ]
+    },
+    "account-lockout-recovery.md": {
+      "article_id": "KB-004",
+      "title": "Account Lockout Recovery",
+      "root_causes": [
+        "Account lockout from stale cached credential"
+      ],
+      "ticket_count": 3,
+      "ticket_ids": [
+        "T-1019",
+        "T-1074",
+        "T-1078"
+      ]
+    },
+    "sso-troubleshooting.md": {
+      "article_id": "KB-005",
+      "title": "SSO Troubleshooting",
+      "root_causes": [
+        "Certificate trust issue",
+        "SSO token/session failure",
+        "Teams sign-in/cache issue"
+      ],
+      "ticket_count": 13,
+      "ticket_ids": [
+        "T-1044",
+        "T-1054",
+        "T-1069",
+        "T-1070",
+        "T-1071",
+        "T-1095",
+        "T-1106",
+        "T-1116",
+        "T-1120",
+        "T-1134",
+        "T-1141",
+        "T-1144",
+        "T-1145"
+      ]
+    },
+    "role-change-access-process.md": {
+      "article_id": "KB-006",
+      "title": "Role Change Access Process",
+      "root_causes": [
+        "Incorrect role assignment",
+        "Required entitlement not assigned"
+      ],
+      "ticket_count": 12,
+      "ticket_ids": [
+        "T-1008",
+        "T-1011",
+        "T-1021",
+        "T-1043",
+        "T-1060",
+        "T-1068",
+        "T-1090",
+        "T-1091",
+        "T-1100",
+        "T-1128",
+        "T-1130",
+        "T-1140"
+      ]
+    },
+    "privileged-access-request-process.md": {
+      "article_id": "KB-007",
+      "title": "Privileged Access Request Process",
+      "root_causes": [
+        "Privileged Access Request Process (secondary)"
+      ],
+      "ticket_count": 4,
+      "ticket_ids": [
+        "T-1008",
+        "T-1011",
+        "T-1043",
+        "T-1140"
+      ]
+    },
+    "vpn-setup.md": {
+      "article_id": "KB-008",
+      "title": "VPN Setup",
+      "root_causes": [
+        "VPN Setup (secondary)"
+      ],
+      "ticket_count": 4,
+      "ticket_ids": [
+        "T-1016",
+        "T-1031",
+        "T-1046",
+        "T-1073"
+      ]
+    },
+    "vpn-certificate-renewal.md": {
+      "article_id": "KB-009",
+      "title": "VPN Certificate Renewal",
+      "root_causes": [
+        "Expired VPN certificate"
+      ],
+      "ticket_count": 14,
+      "ticket_ids": [
+        "T-1029",
+        "T-1030",
+        "T-1031",
+        "T-1032",
+        "T-1033",
+        "T-1034",
+        "T-1035",
+        "T-1037",
+        "T-1038",
+        "T-1039",
+        "T-1040",
+        "T-1045",
+        "T-1046",
+        "T-1047"
+      ]
+    },
+    "vpn-troubleshooting.md": {
+      "article_id": "KB-010",
+      "title": "VPN Troubleshooting",
+      "root_causes": [
+        "DNS resolution failure",
+        "VPN client misconfiguration"
+      ],
+      "ticket_count": 10,
+      "ticket_ids": [
+        "T-1005",
+        "T-1013",
+        "T-1015",
+        "T-1016",
+        "T-1064",
+        "T-1065",
+        "T-1073",
+        "T-1093",
+        "T-1138",
+        "T-1142"
+      ]
+    },
+    "remote-access-troubleshooting.md": {
+      "article_id": "KB-011",
+      "title": "Remote Access Troubleshooting",
+      "root_causes": [
+        "Conditional access policy failure",
+        "Device compliance failure",
+        "WiFi authentication issue"
+      ],
+      "ticket_count": 15,
+      "ticket_ids": [
+        "T-1003",
+        "T-1012",
+        "T-1014",
+        "T-1025",
+        "T-1027",
+        "T-1042",
+        "T-1057",
+        "T-1059",
+        "T-1061",
+        "T-1067",
+        "T-1083",
+        "T-1132",
+        "T-1135",
+        "T-1139",
+        "T-1148"
+      ]
+    },
+    "outlook-configuration.md": {
+      "article_id": "KB-012",
+      "title": "Outlook Configuration",
+      "root_causes": [
+        "Outlook profile corruption"
+      ],
+      "ticket_count": 10,
+      "ticket_ids": [
+        "T-1009",
+        "T-1020",
+        "T-1028",
+        "T-1086",
+        "T-1097",
+        "T-1104",
+        "T-1107",
+        "T-1118",
+        "T-1133",
+        "T-1136"
+      ]
+    },
+    "shared-mailboxes.md": {
+      "article_id": "KB-013",
+      "title": "Shared Mailboxes",
+      "root_causes": [
+        "Shared mailbox permission not propagated"
+      ],
+      "ticket_count": 5,
+      "ticket_ids": [
+        "T-1001",
+        "T-1052",
+        "T-1063",
+        "T-1072",
+        "T-1149"
+      ]
+    },
+    "trading-platform-access.md": {
+      "article_id": "KB-014",
+      "title": "Trading Platform Access",
+      "root_causes": [
+        "Trading profile misconfiguration"
+      ],
+      "ticket_count": 9,
+      "ticket_ids": [
+        "T-1017",
+        "T-1055",
+        "T-1056",
+        "T-1062",
+        "T-1077",
+        "T-1103",
+        "T-1146",
+        "T-1147",
+        "T-1150"
+      ]
+    },
+    "portfolio-management-permissions.md": {
+      "article_id": "KB-015",
+      "title": "Portfolio Management Permissions",
+      "root_causes": [
+        "Portfolio access role missing"
+      ],
+      "ticket_count": 9,
+      "ticket_ids": [
+        "T-1018",
+        "T-1022",
+        "T-1024",
+        "T-1036",
+        "T-1048",
+        "T-1092",
+        "T-1108",
+        "T-1127",
+        "T-1131"
+      ]
+    },
+    "market-data-entitlement-requests.md": {
+      "article_id": "KB-016",
+      "title": "Market Data Entitlement Requests",
+      "root_causes": [
+        "Missing market data entitlement"
+      ],
+      "ticket_count": 8,
+      "ticket_ids": [
+        "T-1113",
+        "T-1115",
+        "T-1117",
+        "T-1121",
+        "T-1122",
+        "T-1123",
+        "T-1124",
+        "T-1125"
+      ]
+    },
+    "client-reporting-portal-access.md": {
+      "article_id": "KB-017",
+      "title": "Client Reporting Portal Access",
+      "root_causes": [
+        "Client reporting permissions not assigned"
+      ],
+      "ticket_count": 5,
+      "ticket_ids": [
+        "T-1006",
+        "T-1041",
+        "T-1050",
+        "T-1051",
+        "T-1112"
+      ]
+    },
+    "document-management-system-access.md": {
+      "article_id": "KB-018",
+      "title": "Document Management System Access",
+      "root_causes": [
+        "Document library permission missing"
+      ],
+      "ticket_count": 4,
+      "ticket_ids": [
+        "T-1094",
+        "T-1098",
+        "T-1099",
+        "T-1111"
+      ]
+    },
+    "phishing-reporting-procedure.md": {
+      "article_id": "KB-019",
+      "title": "Phishing Reporting Procedure",
+      "root_causes": [
+        "Phishing Reporting Procedure (secondary)"
+      ],
+      "ticket_count": 2,
+      "ticket_ids": [
+        "T-1089",
+        "T-1114"
+      ]
+    },
+    "device-encryption-requirements.md": {
+      "article_id": "KB-020",
+      "title": "Device Encryption Requirements",
+      "root_causes": [
+        "Endpoint encryption non-compliance",
+        "Endpoint management/enrollment issue"
+      ],
+      "ticket_count": 7,
+      "ticket_ids": [
+        "T-1004",
+        "T-1010",
+        "T-1023",
+        "T-1026",
+        "T-1049",
+        "T-1058",
+        "T-1066"
+      ]
+    },
+    "security-incident-escalation.md": {
+      "article_id": "KB-021",
+      "title": "Security Incident Escalation",
+      "root_causes": [
+        "Security Incident Escalation (secondary)"
+      ],
+      "ticket_count": 4,
+      "ticket_ids": [
+        "T-1026",
+        "T-1058",
+        "T-1096",
+        "T-1137"
+      ]
+    },
+    "suspicious-login-investigation-process.md": {
+      "article_id": "KB-022",
+      "title": "Suspicious Login Investigation Process",
+      "root_causes": [
+        "Suspicious login investigation"
+      ],
+      "ticket_count": 5,
+      "ticket_ids": [
+        "T-1089",
+        "T-1096",
+        "T-1109",
+        "T-1114",
+        "T-1137"
+      ]
+    },
+    "employee-onboarding.md": {
+      "article_id": "KB-023",
+      "title": "Employee Onboarding",
+      "root_causes": [
+        "Delayed access provisioning"
+      ],
+      "ticket_count": 4,
+      "ticket_ids": [
+        "T-1053",
+        "T-1102",
+        "T-1110",
+        "T-1126"
+      ]
+    },
+    "employee-offboarding.md": {
+      "article_id": "KB-024",
+      "title": "Employee Offboarding",
+      "root_causes": [
+        "Inactive account"
+      ],
+      "ticket_count": 3,
+      "ticket_ids": [
+        "T-1002",
+        "T-1105",
+        "T-1129"
+      ]
+    },
+    "access-certification-process.md": {
+      "article_id": "KB-025",
+      "title": "Access Certification Process",
+      "root_causes": [
+        "Access Certification Process (secondary)"
+      ],
+      "ticket_count": 4,
+      "ticket_ids": [
+        "T-1011",
+        "T-1108",
+        "T-1127",
+        "T-1140"
+      ]
+    }
+  },
+  "incident_waves": [
+    {
+      "name": "March 2025 VPN certificate expiry",
+      "window": "2025-03-10..2025-03-26",
+      "root_cause": "Expired VPN certificate",
+      "kb": "vpn-certificate-renewal.md"
+    },
+    {
+      "name": "June 2025 MFA enrollment failures",
+      "window": "2025-06-02..2025-06-18",
+      "root_cause": "Failed MFA enrollment",
+      "kb": "mfa-enrollment.md"
+    },
+    {
+      "name": "September 2025 market data entitlement lapse",
+      "window": "2025-09-08..2025-09-22",
+      "root_cause": "Missing market data entitlement",
+      "kb": "market-data-entitlement-requests.md"
+    }
+  ],
+  "example_evaluation_questions": [
+    {
+      "type": "single_source_ticket",
+      "q": "How many VPN tickets were logged in March 2025?"
+    },
+    {
+      "type": "single_source_kb",
+      "q": "What are the resolution steps for renewing a VPN certificate?"
+    },
+    {
+      "type": "temporal_aggregate",
+      "q": "Did VPN-related issues spike during any period in 2025, and what was the likely cause?"
+    },
+    {
+      "type": "cross_source",
+      "q": "A user reports 'VPN wont connect, certificate error.' Which KB article applies, and have we seen this before?"
+    },
+    {
+      "type": "cross_source",
+      "q": "Several traders report blank price panels. What is the documented procedure and which past tickets match?"
+    },
+    {
+      "type": "cross_source",
+      "q": "An advisor's portfolio dashboard is empty after a transfer. What likely happened and how was it fixed previously?"
+    },
+    {
+      "type": "root_cause_pattern",
+      "q": "Which single root cause generated the most tickets across the year?"
+    },
+    {
+      "type": "cross_source",
+      "q": "A user can't finish MFA setup. What does the enrollment KB say, and was there a known incident wave?"
+    },
+    {
+      "type": "operational_impact",
+      "q": "Which incident wave caused the largest operational impact (by impact_level and criticality)?"
+    },
+    {
+      "type": "data_quality",
+      "q": "Which tickets were reopened after a temporary fix, and what was the permanent resolution?"
+    },
+    {
+      "type": "cross_source",
+      "q": "Outlook keeps crashing for a user. What's the standard fix and how many similar tickets exist?"
+    },
+    {
+      "type": "cross_source",
+      "q": "After an access certification cycle a user lost access. What process explains this and how is it corrected?"
+    }
+  ]
+}
