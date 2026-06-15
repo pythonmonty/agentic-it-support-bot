@@ -54,6 +54,21 @@ uv run it-support-bot            # interactive chat
 With `RETRIEVER=auto`, if the embedding endpoint is unreachable the system degrades to a local
 BM25 keyword retriever (`rank-bm25`) instead of failing.
 
+## Example Queries
+
+Here are a few example queries that you can try out:
+
+- How many VPN tickets were logged in March 2025?
+- Which departments experience the most access issues?
+- Are trading teams affected differently from operations teams?
+- A user reports "VPN won't connect, certificate error." Which KB article applies, and have we seen
+  this before?
+- Did VPN issues spike during any period in 2025, and what was the likely cause?
+- Several traders report blank price panels. What is the documented procedure and which past
+  tickets match?
+- Which tickets were reopened after a temporary fix, and what was the permanent resolution?
+- A user can't finish MFA setup. What does the enrollment KB say, and was there a known incident wave?
+
 ## Tests & code quality
 
 To run tests:
