@@ -1,7 +1,7 @@
 # Synthetic IT-Support Dataset for a Private Bank
 
 The datasets were generated with Claude's Opus 4.8 model by feeding it the prompt
-[dataset_generation_prompt.md](../dataset_generation_prompt.md).
+[dataset_generation_prompt.md](../DATA_GENERATION_PROMPT.md).
 
 
 A synthetic dataset with **structured support tickets** (relational/JSON) and
